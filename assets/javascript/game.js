@@ -34,7 +34,7 @@ function updateGuesses() {
 
 function psychicGame() {
   // get a random integer between 0 and 25 (length of letters array-1)
-  var letterIndex = getRndInteger(0, letters.length - 1);
+  var letterIndex = getRndInteger(0, letters.length);
 
   // using the random integer, select the appropriate letter
   var chosenLetter = letters[letterIndex];
