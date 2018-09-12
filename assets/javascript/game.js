@@ -13,21 +13,21 @@ function getRndInteger(min, max) {
 
 function updateWin() {
   // update the number of wins in HTML
-  document.getElementById("winCount").innerHTML = "Wins: " + wins;
+  document.getElementById("winCount").innerHTML = wins;
 }
 
 function updateLoss() {
   // update the number of losses in HTML
-  document.getElementById("lossCount").innerHTML = "Losses: " + losses;
+  document.getElementById("lossCount").innerHTML = losses;
 }
 
 function updateGuesses() {
-  document.getElementById("guessCount").innerHTML = "Guesses Left: " + guessCount;
+  document.getElementById("guessCount").innerHTML = guessCount;
   var listText = ""
   for (i = 0; i < guessList.length; i++) {
     listText = listText + " " + guessList[i];
   }
-  document.getElementById("guessesMade").innerHTML = "Your Guesses so far: <br/>" + listText;
+  document.getElementById("guessesMade").innerHTML = listText;
 }
 
 
